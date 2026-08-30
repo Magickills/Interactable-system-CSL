@@ -5,8 +5,8 @@ Interactable system :: class : Interactable{
 
      ao_start :: method() {
                 this.set_listener(this);
-                this.set_text("Go to the Maze minigame ?");
-                this.set_hold_text("Goining...");
+                this.set_text("Text");
+                this.set_hold_text("Text");
                 radius = 1.25;
                 required_hold_time = 0.75;
         }
