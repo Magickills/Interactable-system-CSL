@@ -1,0 +1,27 @@
+//Its the most simple way to do a interactable componant
+
+Interactable system :: class : Interactable{
+     teleported : bool;
+
+     ao_start :: method() {
+                this.set_listener(this);
+                this.set_text("Go to the Maze minigame ?");
+                this.set_hold_text("Goining...");
+                radius = 1.25;
+                required_hold_time = 0.75;
+        }
+
+        can_use :: method(player: Player) -> bool {
+             teleported = false;
+             return true;
+        }
+
+        on_interact :: method(player: Player) {    
+               teleported = true;
+               }
+        
+
+
+
+
+    }
